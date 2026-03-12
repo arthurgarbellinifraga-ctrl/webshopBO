@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* achtergrond kleur website */
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+/* informatie.header */
+.informatie-header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; 
+}
+
+/* search bar input */
+.search-top {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+h1 {
+    color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    animation: colorChange 4s linear infinite;
+    
+}
+
+/* animatie header */
+@keyframes colorChange {
+    0% { color: #89cff0; }
+    50%{color: #e289de}
+    75%{color: #1b77a1}
+    100% {color: #89cff0; }
+}
+
+/* allign p1 */
+p1 {
+    display: block;
+    font-size: 1.7rem; /* groote text */
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #6FB7E9;
+    margin-top: 1.2rem;
+    letter-spacing: -0.3px
+
+}   
+
+.cta{
+    
+    align-items: center;
+    height: 700px;
+    width: 700px;
+    margin: 1.5rem auto;
+    border: 1px  green;
+    position: relative;
+}
+/* achtergrond alligment */
+.cta img {
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}
+
+/*align button/ button design*/
+.buy-btn {
+    position: absolute;
+    top: 340px;
+    left: 39%;
+    display: inline-block;
+    background: white;
+    color: black;
+    border: 1px solid #000000;
+}
+
+
+
+
+
+
