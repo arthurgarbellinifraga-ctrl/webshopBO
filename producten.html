@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mijn Producten</title>
+    <style>
+        .product {
+            display: inline-block;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mijn Producten</h1>
+    <h2>producten:
+       babyolie 1,
+       babyolie 2,
+       babyolie 3,
+       babyolie 4,
+       babyolie 5,
+       babyolie 6,
+       babyolie 7,
+        babyolie 8,
+        babyolie 9,
+        babyolie 10
+    </h2>
+
+  
+    <select id="productFilter" onchange="filterProduct()">
+        <option value="all">Alle producten</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+
+
+    <div class="product" data-product="1">
+        <img src="producten/babyolie1.webp" alt="olie 1" width="200">
+    </div>
+    <div class="product" data-product="2">
+        <img src="producten/babyolie2.webp" alt="olie 2" width="200">
+    </div>
+    <div class="product" data-product="3">
+        <img src="producten/babyolie3.webp" alt="olie 3" width="200">
+    </div>
+    <div class="product" data-product="4">
+        <img src="producten/babyolie4.webp" alt="olie 4" width="200">
+    </div>
+    <div class="product" data-product="5">
+        <img src="producten/babyolie5.webp" alt="olie 5" width="200">
+    </div>
+    <div class="product" data-product="6">
+        <img src="producten/babyolie6.webp" alt="olie 6" width="200">
+    </div>
+    <div class="product" data-product="7">
+        <img src="producten/babyolie7.webp" alt="olie 7" width="200">
+    </div>
+    <div class="product" data-product="8">
+        <img src="producten/babyolie8.webp" alt="olie 8" width="200">
+    </div>
+    <div class="product" data-product="9">
+        <img src="producten/babyolie9.webp" alt="olie 9" width="200">
+    </div>
+    <div class="product" data-product="10">
+        <img src="producten/babyolie10.webp" alt="olie 10" width="200">
+    </div>
+
+   
+    <script>
+        function filterProduct() {
+            const filter = document.getElementById("productFilter").value;
+            const producten = document.querySelectorAll(".product");
+
+            producten.forEach(product => {
+                if (filter === "all" || product.dataset.product === filter) {
+                    product.style.display = "inline-block";
+                } else {
+                    product.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

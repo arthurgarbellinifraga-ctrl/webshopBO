@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="productStyle.css">
+  
     <title>Babyolie.com</title>
 </head>
 <body>
@@ -11,7 +13,13 @@
     <h1>Babyolies</h1>
 
     <div class="search-top">
-        <input type="search" class="search-input" placeholder="search products...">
+      
+       <input id="search" class="search-input" placeholder="search products..." onkeyup="zoekProduct()">
+
+        <img id="productImage" src="" width="200">
+
+        <script src="zoekding.js"></script>
+             
     </div>
 </div>
 
@@ -22,9 +30,11 @@
 
     <section class="cta">
         <img class="cta-img" src="pictures/background cta.webp" alt="achtergrond foto">
- <button class="buy-btn">Bekijk alle producten:</button>
+ <a href="producten.html" class="buy-btn">Bekijk alle producten</a>
     </section>
     
     
 </body>
+ 
+
 </html>
