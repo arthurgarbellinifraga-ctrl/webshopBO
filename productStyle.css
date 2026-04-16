@@ -1,3 +1,5 @@
+
+
 .buy-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -5,5 +7,24 @@
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+header{
+    color: black;
+background-color: aqua;
+border-radius: 5rem;
+}
+
+footer img{
+ width: 70px;  
+  height: auto;  
+  vertical-align: middle;
+}
+
+footer {
+  display: flex;
+  align-items: center; /* zorgt dat alles mooi uitlijnt */
+  gap: 10px; /* beetje ruimte tussen tekst en afbeelding */
+  padding-top: 20px;
 }
 
